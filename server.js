@@ -6,7 +6,6 @@ app.use(express.json());
 
 app.get("/api", (req, res) => {
   const date = new Date();
-  //   console.log();
   const dateArr = [
     "Sunday",
     "Monday",
@@ -24,8 +23,9 @@ app.get("/api", (req, res) => {
     current_day,
     track,
     utc_time: date.toISOString(),
-    github_file_url: "",
-    github_repo_url: "",
+    github_file_url:
+      "https://github.com/gphics/hng-stageOne/blob/main/server.js",
+    github_repo_url: "https://github.com/gphics/hng-stageOne",
     status_code: 200,
   });
 });
