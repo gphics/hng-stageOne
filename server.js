@@ -22,7 +22,7 @@ app.get("/api", (req, res) => {
     slack_name,
     current_day,
     track,
-    utc_time: date.toISOString().split(".")[0] + "Z"
+    utc_time: date.toISOString().split(".")[0] + "Z",
     github_file_url:
       "https://github.com/gphics/hng-stageOne/blob/main/server.js",
     github_repo_url: "https://github.com/gphics/hng-stageOne",
